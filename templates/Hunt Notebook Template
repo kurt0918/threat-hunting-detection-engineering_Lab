@@ -1,0 +1,78 @@
+# Hunt Notebook
+
+## 1. Overview
+
+- **Hunt Name:** 
+- **Date:** 
+- **Owner:** 
+- **Environment:** (e.g., Azure AD, O365, On-Prem AD, Endpoint, Cloud)
+- **Primary Tools:** (Sentinel, Splunk, Defender, SentinelOne, etc.)
+
+## 2. Trigger & Hypothesis
+
+- **Trigger:**  
+  (CTI report, anomalous alerts, detection gap, purple-team exercise, etc.)
+
+- **Hypothesis:**  
+  If <actor/TTP/behavior> is present in the environment, we should see <signals/artifacts> in <data sources>.
+
+## 3. Scope & Data Sources
+
+- **Time Range:** 
+- **Log Sources:**
+  - e.g., `SecurityEvent`, `DeviceProcessEvents`, proxy logs, DNS logs
+- **Key Fields:**
+  - e.g., `AccountName`, `ProcessCommandLine`, `IPAddress`, `DeviceName`
+
+## 4. Queries (Iterations)
+
+### 4.1 Initial Broad Query
+
+```kql
+// Initial wide-net query here
+
+Notes / Observations:
+
+4.2 Refined Query #1
+// More targeted query
+Notes / Observations:
+
+4.3 Additional Pivots
+Pivoted on:
+
+User:
+Host:
+IP:
+Hash:
+
+5. Findings
+Suspicious Activity Found? (Yes/No)
+
+Summary of Key Findings:
+
+False Positives Observed:
+
+Patterns, root causes, noise sources
+
+6. Detection Opportunities
+Proposed Detection:
+
+Name:
+Platform: (Sentinel, Splunk, EDR, Sigma)
+ATT&CK Mapping:
+Severity:
+Required Data:
+Tuning / Exclusions:
+
+7. Gaps & Recommendations
+Missing telemetry?
+Logging or visibility gaps?
+EDR/SIEM configurations to improve?
+8. Outcome
+Status: (Closed with no issues / Detection created / Needs follow-up)
+
+Artifacts:
+
+Queries stored at:
+Playbook updated:
+Detection rule file:
